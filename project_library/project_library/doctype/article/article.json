@@ -15,7 +15,8 @@
   "route",
   "published_by",
   "book_name",
-  "image"
+  "image",
+  "library_location"
  ],
  "fields": [
   {
@@ -65,12 +66,18 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "fieldname": "library_location",
+   "fieldtype": "Select",
+   "label": "Library Location",
+   "options": "CIET\nCIET MBA\nCMAT"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-30 14:32:15.952489",
+ "modified": "2023-08-30 15:25:47.135076",
  "modified_by": "Administrator",
  "module": "Project Library",
  "name": "Article",

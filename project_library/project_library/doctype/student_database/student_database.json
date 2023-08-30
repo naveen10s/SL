@@ -7,16 +7,16 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "profile_photo",
   "name1",
   "roll_no",
   "department",
   "year",
+  "column_break_nqwkf",
   "dob",
   "address",
   "personal_number",
-  "email_id",
-  "parents_mobile_no",
-  "profile_photo"
+  "email_id"
  ],
  "fields": [
   {
@@ -60,19 +60,18 @@
    "label": "Email ID"
   },
   {
-   "fieldname": "parents_mobile_no",
-   "fieldtype": "Int",
-   "label": "Parents Mobile No"
-  },
-  {
    "fieldname": "profile_photo",
    "fieldtype": "Image",
    "label": "Profile Photo"
+  },
+  {
+   "fieldname": "column_break_nqwkf",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-30 14:41:39.551431",
+ "modified": "2023-08-30 15:43:08.861853",
  "modified_by": "Administrator",
  "module": "Project Library",
  "name": "Student Database",
