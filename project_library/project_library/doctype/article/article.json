@@ -10,6 +10,7 @@
   "serial_number",
   "purchase_date",
   "author_name",
+  "column_break_tic6y",
   "published_by",
   "book_name",
   "image"
@@ -53,11 +54,15 @@
    "fieldname": "image",
    "fieldtype": "Image",
    "label": "Image"
+  },
+  {
+   "fieldname": "column_break_tic6y",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-30 11:27:18.110124",
+ "modified": "2023-08-30 12:38:24.491997",
  "modified_by": "Administrator",
  "module": "Project Library",
  "name": "Article",
