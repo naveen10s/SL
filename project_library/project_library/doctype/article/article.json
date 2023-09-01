@@ -2,21 +2,27 @@
  "actions": [],
  "allow_guest_to_view": 1,
  "allow_rename": 1,
+ "autoname": "field:book_name",
  "creation": "2023-08-30 11:26:42.257206",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "book_name",
   "serial_number",
   "purchase_date",
   "author_name",
-  "column_break_tic6y",
-  "route",
   "published_by",
-  "book_name",
   "image",
-  "library_location"
+  "column_break_tic6y",
+  "library_location",
+  "shelf_number",
+  "rack_number",
+  "partition",
+  "status",
+  "route",
+  "published"
  ],
  "fields": [
   {
@@ -44,18 +50,19 @@
    "fieldname": "published_by",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Published By",
+   "label": "Publisher",
    "reqd": 1
   },
   {
    "fieldname": "book_name",
    "fieldtype": "Data",
    "label": "Book Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "image",
-   "fieldtype": "Image",
+   "fieldtype": "Attach Image",
    "label": "Image"
   },
   {
@@ -72,15 +79,45 @@
    "fieldtype": "Select",
    "label": "Library Location",
    "options": "CIET\nCIET MBA\nCMAT"
+  },
+  {
+   "fieldname": "rack_number",
+   "fieldtype": "Data",
+   "label": "Rack Number "
+  },
+  {
+   "fieldname": "partition",
+   "fieldtype": "Select",
+   "label": "Partition",
+   "options": "Left\nRight\nMiddle"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nIssued"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "shelf_number",
+   "fieldtype": "Data",
+   "label": "Shelf Number"
   }
  ],
  "has_web_view": 1,
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-30 15:25:47.135076",
+ "modified": "2023-09-01 13:38:37.064105",
  "modified_by": "Administrator",
  "module": "Project Library",
  "name": "Article",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -106,9 +143,17 @@
    "role": "Librarian",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
   }
  ],
- "route": "Article",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
