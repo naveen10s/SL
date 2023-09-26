@@ -117,14 +117,14 @@
    "fieldtype": "Data",
    "is_virtual": 1,
    "label": "Location",
-   "options": "f\"{doc.partition} - {doc.rack_number}R - {doc.shelf_number}S\""
+   "options": "CIET\nCIET MBA\nCMAT"
   }
  ],
  "has_web_view": 1,
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-07 15:34:59.791043",
+ "modified": "2023-09-26 17:13:28.260527",
  "modified_by": "Administrator",
  "module": "Project Library",
  "name": "Article",

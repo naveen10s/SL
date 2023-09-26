@@ -46,12 +46,12 @@
   },
   {
    "fieldname": "address",
-   "fieldtype": "Text",
+   "fieldtype": "Long Text",
    "label": "Address"
   },
   {
    "fieldname": "personal_number",
-   "fieldtype": "Int",
+   "fieldtype": "Phone",
    "label": "Personal Number"
   },
   {
@@ -61,7 +61,7 @@
   },
   {
    "fieldname": "profile_photo",
-   "fieldtype": "Image",
+   "fieldtype": "Attach Image",
    "label": "Profile Photo"
   },
   {
@@ -71,7 +71,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-30 15:43:08.861853",
+ "modified": "2023-09-26 17:11:47.433206",
  "modified_by": "Administrator",
  "module": "Project Library",
  "name": "Student Database",
